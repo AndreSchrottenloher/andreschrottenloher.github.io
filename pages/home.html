@@ -41,9 +41,19 @@
 
 <p> Post-quantum cryptography aims at protecting current cryptosystems from an attacker equipped with a large-scale quantum computing device. While such a machine does not exist yet, it is well known that it would be able to break some widely used public-key cryptosystems (for example RSA). This is why the community is designing post-quantum cryptosystems which would be immune to this threat. </p>
 
-<p> I am primarily interested in the security of secret-key cryptosystems ("symmetric"), such as block ciphers, hash functions, MACs, etc. In the "classical" world, this security is ensured by a constant cryptanalysis effort. In the "quantum" world, it is commonly admitted that these algorithms are generally robust, due to a lack of algebraic structure. However, this is just a general belief. The purpose of "quantum symmetric cryptanalysis", a very recent line of work, is to formalize the post-quantum security of symmetric designs in the same way as in the classical world, in order to offer the same security guarantees. This is the context of most of my work. </p>
+<p> The confidence we have in modern cryptosystems relies on a large-scale cryptanalysis effort: cryptanalysts try for years to find weaknesses in designs or improved algorithms for the mathematical problems that underlie their security assumptions. Because of the possibility that a functional quantum computer appears in the future, we need to look not only for <em> classical </em> attacks but also <em> quantum </em> attacks, which make inherent use of the enhanced computational power of such a machine. While the attacker has quantum power, the algorithms attacked are still classical, because we expect them to still be in use twenty or thirty years from now. </p>
 
-<p> I have also worked on some applications of quantum algorithms in public-key cryptography. </p>
+<p> This is the area of <em> quantum cryptanalysis </em>, on which my research mainly focuses:
+<ul>
+<li> In symmetric (secret-key) cryptography: symmetric cryptosystems such as block ciphers, hash functions, MACs, are commonly admitted to be generally robust against a quantum attacker. While this is true of <em>most</em> designs and in <em>most</em> use cases, many recent works have designed improvements and attacks specific to the quantum setting. My work in this area consists in finding such attacks and establishing more precise estimates of post-quantum security for current symmetric cryptosystems. </li>
+<li> In asymmetric (public-key) cryptography: public-key cryptosystems, whether pre- or post-quantum, rely on the hardness of well-formulated mathematical problems such as factoring or finding short vectors in lattices. I work on improving the quantum algorithms which target these problems. </li>
+</ul>
+
+<!--I also work on classical symmetric cryptanalysis. </p>-->
+
+<!-- <p> I am primarily interested in the security of secret-key cryptosystems ("symmetric"), such as block ciphers, hash functions, MACs, etc. In the "classical" world, this security is ensured by a constant cryptanalysis effort. In the "quantum" world, it is commonly admitted that these algorithms are generally robust, due to a lack of algebraic structure. However, this is just a general belief. The purpose of "quantum symmetric cryptanalysis", a very recent line of work, is to formalize the post-quantum security of symmetric designs in the same way as in the classical world, in order to offer the same security guarantees. This is the context of most of my work. </p> -->
+
+<!-- <p> I have also worked on some applications of quantum algorithms in public-key cryptography. </p> -->
 
 
 <br>
@@ -56,13 +66,13 @@ I'm involved in the following research projects:
 
 <br>
     <h2>Students </h2>
-PhD Students:
+I'm currently supervising two PhD Students:
 <ul>
 <li> Quentin Edme, from january 2024 to january 2027, with Pierre-Alain Fouque and Loïc Ferreira (Orange Labs), on proofs of security and attacks on symmetric designs in the quantum setting  </li>
 <li> Mathieu Degré, from january 2024 to january 2027, with Patrick Derbez, on automatic tools for symmetric cryptanalysis and meet-in-the-middle attacks </li>
 </ul>
 
-Interns:
+Internships that I have supervised:
 <ul>
 <!-- <li>Aurel Pichollet-Mugnier, from march 2024 to july 2024-->
 <li>Lucie Lahaye, from june 2023 to july 2023, on preimage attacks on the Ascon-Hash function </li>
