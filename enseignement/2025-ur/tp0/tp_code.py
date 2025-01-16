@@ -95,3 +95,8 @@ q4_challenge = "9GVHL2Jb+QLfityW1Umw5w=="
 q5_challenge = "rv6mp36Doa6Zyt2WjMDd6w=="
 
 
+#================ QUESTION 6
+
+q6_challenge = "ZTCG1sNoSzT415YbsiZ+yw=="
+
+
