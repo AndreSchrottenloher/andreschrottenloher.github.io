@@ -25,13 +25,13 @@ def LFSR_step(P: list[int], state: list[int]) -> tuple[int,list[int]]:
     return state[0], (state[1:] + [new_bit])
 
 
-def LFSR(P: list[int], state: list[int], N: int) -> list[int]:
+def LFSR_multiple_steps(P: list[int], state: list[int], N: int) -> list[int]:
     tmp = state[:]
     out = []
     for i in range(N):
         bit, tmp = LFSR_step(P, tmp)
         out.append(bit)
-    return out
+    return tmp, out
 
 #=======================================================
 # 17-bit LFSR
